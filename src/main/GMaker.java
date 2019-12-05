@@ -13,6 +13,7 @@ import javafx.stage.Stage;
  */
 public class GMaker extends Application {
     
+    //version
     private static final String VERSION = "GMaker 1.0";
     
     @Override

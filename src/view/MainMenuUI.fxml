@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainMenuUIController">
+   <children>
+      <Button layoutX="243.0" layoutY="66.0" mnemonicParsing="false" onAction="#handlePowersetButton" prefHeight="31.0" prefWidth="116.0" text="Powerset" />
+      <Button layoutX="243.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleDownsetButton" prefHeight="96.0" prefWidth="116.0" text="Downset and set of disjoint downset" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="238.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleJoinIrreducibleButton" prefHeight="62.0" prefWidth="125.0" text="Join-irreducible elements" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

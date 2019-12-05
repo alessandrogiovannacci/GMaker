@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="973.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.JoinIrreducibleElementsInputManagerUIController">
+   <children>
+      <Label layoutX="81.0" layoutY="28.0" prefHeight="21.0" prefWidth="118.0" text="Set name" textFill="WHITE" />
+      <TextField fx:id="setNameTextField" layoutX="227.0" layoutY="23.0" prefHeight="31.0" prefWidth="52.0" />
+      <Label layoutX="591.0" layoutY="28.0" prefHeight="21.0" prefWidth="180.0" text="Set elements number" textFill="WHITE" />
+      <TextField fx:id="setElementsTextField" layoutX="814.0" layoutY="23.0" prefHeight="31.0" prefWidth="36.0" />
+      <Label layoutX="51.0" layoutY="83.0" prefHeight="64.0" prefWidth="402.0" text="For each element in the set, establish the relation with other elements" textFill="WHITE" wrapText="true" />
+      <ComboBox fx:id="elementsComboBox" layoutX="52.0" layoutY="167.0" prefHeight="31.0" prefWidth="75.0" />
+      <ComboBox fx:id="orderRelationComboBox" layoutX="182.0" layoutY="167.0" prefHeight="31.0" prefWidth="126.0" />
+      <ComboBox fx:id="elements2ComboBox" layoutX="366.0" layoutY="167.0" prefHeight="31.0" prefWidth="75.0" visible="false" />
+      <Button layoutX="502.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleAddRelationButtonAction" prefHeight="31.0" prefWidth="81.0" text="Add" />
+      <Label fx:id="messagesLabel" layoutX="31.0" layoutY="429.0" prefHeight="21.0" prefWidth="705.0" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="relationsAddedLabel" layoutX="629.0" layoutY="94.0" prefHeight="21.0" prefWidth="140.0" text="Relations" textFill="WHITE" />
+      <Label fx:id="relationsAddedDisplayerLabel" alignment="TOP_LEFT" layoutX="629.0" layoutY="136.0" prefHeight="199.0" prefWidth="253.0" textFill="WHITE" />
+      <Button layoutX="457.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleGenerateGraphButtonAction" text="Generate input graph">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Separator layoutX="31.0" layoutY="72.0" prefHeight="5.0" prefWidth="442.0" />
+      <Separator layoutX="31.0" layoutY="75.0" orientation="VERTICAL" prefHeight="342.0" prefWidth="0.0" />
+      <Separator layoutX="31.0" layoutY="415.0" prefHeight="5.0" prefWidth="442.0" />
+      <Separator layoutX="470.0" layoutY="75.0" orientation="VERTICAL" prefHeight="342.0" prefWidth="0.0" />
+      <Separator layoutX="606.0" layoutY="72.0" prefHeight="5.0" prefWidth="442.0" />
+      <Separator layoutX="606.0" layoutY="415.0" prefHeight="5.0" prefWidth="442.0" />
+      <Separator layoutX="606.0" layoutY="75.0" orientation="VERTICAL" prefHeight="342.0" prefWidth="0.0" />
+      <Separator layoutX="1045.0" layoutY="75.0" orientation="VERTICAL" prefHeight="342.0" prefWidth="0.0" />
+      <Button fx:id="generateJoinIrreducibleElementsGraphButton" layoutX="457.0" layoutY="885.0" mnemonicParsing="false" onAction="#handleGenerateJoinIrreducibleElementsGraphButtonAction" prefHeight="64.0" prefWidth="200.0" text="Generate join-irreducible elements graph" textAlignment="CENTER" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="resetButton" layoutX="502.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleResetButtonAction" prefHeight="31.0" prefWidth="81.0" text="Reset" visible="false" />
+      <ScrollPane fx:id="scrollPane" layoutX="118.0" layoutY="517.0" prefHeight="352.0" prefWidth="877.0">
+         <content>
+            <StackPane fx:id="pane" prefHeight="300.0" prefWidth="512.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

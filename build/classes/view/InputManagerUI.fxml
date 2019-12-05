@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="886.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.InputManagerUIController">
+   <children>
+      <Label layoutX="461.0" layoutY="11.0" prefHeight="33.0" prefWidth="169.0" text="Set elements number" textFill="WHITE" />
+      <TextField fx:id="elementsTextField" layoutX="672.0" layoutY="12.0" prefHeight="31.0" prefWidth="38.0" />
+      <Button fx:id="generateGraphButton" layoutX="355.0" layoutY="97.0" mnemonicParsing="false" onAction="#handleGenerateGraphButtonAction" prefHeight="31.0" prefWidth="152.0" text="Generate graph">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="61.0" layoutY="17.0" prefHeight="21.0" prefWidth="138.0" text="Set name" textFill="WHITE" />
+      <TextField fx:id="setNameTextField" layoutX="228.0" layoutY="12.0" prefHeight="31.0" prefWidth="62.0" />
+      <Label fx:id="hasseDiagramLabel" layoutX="391.0" layoutY="257.0" prefHeight="53.0" prefWidth="79.0" text="P(" textFill="WHITE" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="messagesLabel" alignment="CENTER" layoutX="227.0" layoutY="62.0" prefHeight="21.0" prefWidth="409.0" textFill="WHITE" />
+      <Label fx:id="elementsLabel" alignment="CENTER" layoutX="280.0" layoutY="169.0" prefHeight="65.0" prefWidth="301.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="pane" layoutX="137.0" layoutY="356.0" prefHeight="296.0" prefWidth="561.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="149.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+      <Button fx:id="resetButton" layoutX="401.0" layoutY="833.0" mnemonicParsing="false" onAction="#handleResetButtonAction" text="Reset" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
